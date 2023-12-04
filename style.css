@@ -1,0 +1,310 @@
+*{box-sizing: border-box;}
+body {
+    margin: 0;
+    padding: 0;
+}
+.padre {
+    background-color: #e7164a;
+    height: 200px;
+    width: fit-content;
+}
+header {
+    background-color: rgb(12, 9, 8);
+    height: fit-content;
+    width: 100%;
+    position: relative;
+    border-top: 0px;
+}
+#animepara {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 300%;
+    animation-name: animepara;
+    animation-fill-mode: both;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+@keyframes animepara {
+    0% {
+        color: pink;
+    }
+    10% {
+        color: yellow;
+    }
+    20% {
+        color: seagreen;
+    }
+    30% {
+        color: black;
+    }
+    40% {
+        color: blue;
+    }
+    50% {
+        color: deeppink;
+    }
+    60% {
+        color: deepskyblue;
+    }
+    70% {
+       color: azure; 
+    }
+    80% {
+        color: crimson;
+    }
+    90% {
+        color: darkgoldenrod;
+    }
+    100% {
+        color: red;
+    }
+}
+header>li>ul {
+    display: inline-flex;
+    color: rgb(60, 184, 11);
+    text-decoration: underline;
+}
+a {
+    text-decoration: none;
+    color: rgb(60, 184, 11);
+}
+/*.container {
+    display: flex;
+    flex-wrap: inherit;/* Create responsive columns 
+    justify-content: space-between;
+}
+
+.column {
+    width: calc(44%);
+    background: #f2f2f2;
+    text-align: center;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .column {
+        width: calc(100%);
+        min-height: fit-content;
+    }
+}
+#career {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 117%;
+    animation-name: career;
+    animation-fill-mode: both;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+}
+@keyframes career {
+    0% {
+        color: rgb(255, 255, 255);
+    }
+    10% {
+        color: rgb(250, 250, 0);
+    }
+    20% {
+        color: seagreen;
+    }
+    30% {
+        color: #bb0909;
+    }
+    40% {
+        color: rgb(12, 172, 236);
+    }
+    50% {
+        color: rgb(178, 226, 7);
+    }
+    60% {
+        color: #09ff00;
+    }
+    70% {
+       color: #000000; 
+    }
+    80% {
+        color: crimson;
+    }
+    90% {
+        color: rgb(247, 246, 243);
+    }
+    100% {
+        color: #00ff00;
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Create responsive columns */
+    margin-top: 0%;
+}
+.column {
+    background: #4e0404;
+    text-align: center;
+}
+#Myphoto {
+    image-rendering: optimizeQuality;
+    border-image-width: 100%;
+    background-size: 100%;
+}
+.collapsible-list {
+    list-style: none;
+    padding: 0;
+}
+
+.list-item {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+}
+.headlinks {
+    margin-left: 30%;
+    color: #bb0909;
+}
+#declaration {
+    color: green;
+    background-color: transparent;
+    font-size: x-small;
+}
+#animacion1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: oblique;
+    font-size: 117%;
+    animation-name: animacion1;
+    animation-fill-mode: both;
+    animation-duration: 100s;
+    animation-iteration-count: infinite;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-shadow: #ccc;
+    background-repeat: no-repeat;
+}
+@keyframes animacion1 {
+    0% {
+        background-image: url(images/candy.png);
+    }
+    10% {
+        background-image: url(images/candy1.png);
+    }
+    20% {
+        background-image: url(images/candy2.png);
+    }
+    30% {
+        background-image: url(images/candy3.png);
+    }
+    40% {
+        background-image: url(images/candy1.png);
+    }
+    50% {
+        background-image: url(images/candy5.png);
+    }
+    60% {
+        background-image: url(images/candy6.png);
+    }
+    70% {
+        background-image: url(images/candy7.png);
+    }
+    80% {
+        background-image: url(images/candy8.png);
+    }
+    90% {
+        background-image: url(images/candy9.png);
+    }
+    100% {
+        background-image: url(images/candy10.png);
+    }
+}
+form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 6px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
+  
+  /* CSS Animation for the submit button */
+  @keyframes colorChange {
+    0% { background-color: #007bff; }
+    10% { background-color: #ff0000; }
+    20% { background-color: #00ff00; }
+    30% { background-color: #ffff00; }
+    40% { background-color: #ff00ff; }
+    50% { background-color: #00ffff; }
+    60% { background-color: #ffa500; }
+    70% { background-color: #800080; }
+    80% { background-color: #008000; }
+    90% { background-color: #ff69b4; }
+    100% { background-color: #007bff; }
+  }
+  
+  /* Apply animation to the submit button */
+  #submitBtn {
+    animation: colorChange 5s infinite;
+  }
+  .mytopline {
+    color: #52f3f8;
+    text-decoration: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .mytopline2 {
+    color: #4f61c5;
+    text-decoration: solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 50%;
+  }
+  .mytopline2:hover {
+    font-size: 250%;
+    text-decoration: wavy;
+    text-shadow: 0.2cm;
+    color: #00ffff;
+
+  }
+  .mytopline:hover {
+    text-decoration: line-through;
+  }
+  .mycontent {
+    color: #01ff01;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #animacion2 {
+    background-image: url(images/candy5.png);
+  }
+  #animacion3 {
+    background-image: url(images/candy10.png);
+  }
+  footer {
+    background-color: #1b1618;
+  }
+  label {
+    color: #00ff00;
+  }
